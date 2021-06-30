@@ -1,0 +1,23 @@
+section{
+    margin: 20px 0;
+    display: flex;
+    color: $dark-grey;
+    article{
+        padding: 0 20px;
+        flex: 2;
+        p{
+            font-size: $font-size-regular;
+            a{
+                color: $green;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }//end :hover
+            }//end a
+        }//end p
+    }//end article
+    aside{
+        flex:1;
+        padding: 0 20px;
+    }
+}//end section

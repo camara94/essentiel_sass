@@ -1,0 +1,91 @@
+//colors
+$pink: #C69;
+$light-grey: #DADBDF;
+$dark-grey: #6B717F;
+$white: #FFF;
+$green: #699; 
+
+//font families
+$font-family-text: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-Title: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+
+$font-size-regular: 1rem;
+$font-size-small: $font-size-regular * 0.75;
+$font-size-big: $font-size-regular * 2;
+
+
+body{
+    background-color: $light-grey;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color: $white;
+}
+header{
+    background-color: $green;
+    padding: 20px;
+    h1{
+        font-family: $font-family-Title;
+        font-size: $font-size-big;
+        color: $pink;  
+    }//end h1
+}//end header
+nav{
+    background-color: $pink;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a{
+                display: block;
+                padding: 2px 20px;
+                text-decoration: none;
+                color: $white;
+                font: {
+                    size: $font-size-regular;
+                    font-family: $font-family-Title;
+                    weight: bold;
+                }//end font
+                &:hover{
+                    background-color: $dark-grey;
+                }//end :hover
+            }//end a
+        }//end li
+    }//end ul
+}//end nav
+section{
+    margin: 20px 0;
+    padding: 0 20px;
+    p{
+        color: $dark-grey;
+        font-size: $font-size-regular;
+        a{
+            color: $green;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }//end :hover
+        }//end a
+    }//end p
+}//end section
+
+footer{
+    padding: 20px;
+    background-color: $pink;
+    p{
+        color: $white;
+        font-size: $font-size-small;
+        font-style: italic;
+        a{
+            color: $light-grey;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }//end :hover
+        }//end a
+    }//end p
+}//end footer

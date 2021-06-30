@@ -1,0 +1,15 @@
+@function unitize($value){
+    @if type_of($value) == 'number' and unitless($value){
+        @return unquote($value + $defaultUnit);
+    }@else if length($value) > 1{
+        $toReturn: ();
+        @each $item in $value {
+            $currentValue: unitize($item);
+            $toReturn: join($toReturn, $currentValue);
+        }
+        @return $toReturn; 
+        
+    }@else{
+        @return $value;
+    }
+}

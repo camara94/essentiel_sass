@@ -1,0 +1,32 @@
+/* line 16, /Users/producer/Documents/Chapitre03/03_02/styles.scss */
+body {
+  background-color: #DADBDF; }
+
+/* line 19, /Users/producer/Documents/Chapitre03/03_02/styles.scss */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #FFF; }
+
+/* line 24, /Users/producer/Documents/Chapitre03/03_02/styles.scss */
+h1 {
+  font-family: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: #C69;
+  padding: 20px; }
+
+/* line 30, /Users/producer/Documents/Chapitre03/03_02/styles.scss */
+p {
+  color: #6B717F;
+  font-size: 1rem;
+  padding: 0 20px; }
+
+/* line 35, /Users/producer/Documents/Chapitre03/03_02/styles.scss */
+footer {
+  background-color: #C69;
+  color: #FFF;
+  padding: 20px;
+  font-size: 0.75rem;
+  font-style: italic; }
+
+/*# sourceMappingURL=styles.css.map */

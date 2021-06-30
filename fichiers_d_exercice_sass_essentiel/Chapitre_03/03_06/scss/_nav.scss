@@ -1,0 +1,26 @@
+nav{
+    background-color: $pink;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a{
+                display: block;
+                padding: 2px 20px;
+                text-decoration: none;
+                color: $white;
+                font: {
+                    size: $font-size-regular;
+                    font-family: $font-family-Title;
+                    weight: bold;
+                }//end font
+                &:hover{
+                    background-color: $dark-grey;
+                }//end :hover
+            }//end a
+        }//end li
+    }//end ul
+}//end nav

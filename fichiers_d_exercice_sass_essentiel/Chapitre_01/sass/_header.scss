@@ -1,0 +1,23 @@
+header{
+    @include linearGradient(lighten($pink, 20), $pink);
+    padding: 20px;
+    img{
+        width: 10%;
+        min-width: 75px;
+        display: inline-block;
+        vertical-align: middle;
+    }//end img
+    h1{
+        font:{
+            family: $font-family-text;
+            size: $font-size-xx-large;
+            
+        }//end font
+        color: $blue;
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: map_get($breakpoints, tablet-large)){
+                font-size: $font-size-x-large;
+            }
+    }//end h1
+}

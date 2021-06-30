@@ -1,0 +1,17 @@
+#main{
+    margin: 20px 0;
+    padding: 0 20px;
+    font: {
+        family: $font-family-text;
+        size: $font-size-regular;
+    }//end font
+    color: $color-text;
+    h1{
+        font-size: $font-size-x-large;
+        color:$color-accent;
+        margin-bottom: 20px;
+    }//end h1
+    p{
+        margin: 10px 0;
+    }
+}//end #main

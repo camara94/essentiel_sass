@@ -1,0 +1,14 @@
+body{
+    padding: 20px 0;
+    background-color: $color-background-shade;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-background;
+    @each $breakpoint in map-values($breakpoints) {
+        @media screen and (min-width: $breakpoint){
+            max-width: $breakpoint;
+        }
+    }//end @each
+}

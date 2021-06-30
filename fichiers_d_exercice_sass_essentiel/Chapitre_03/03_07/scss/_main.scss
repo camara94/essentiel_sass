@@ -1,0 +1,14 @@
+body{
+    background:{ 
+        color: $light-grey;
+        image: url('css-27192.svg');
+        attachment: fixed;
+    }//end background
+    
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color: transparentize($white, 0.2);
+    border: solid 3px $green;
+}

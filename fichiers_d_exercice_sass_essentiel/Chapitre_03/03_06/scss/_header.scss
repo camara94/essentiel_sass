@@ -1,0 +1,9 @@
+header{
+    background: linear-gradient(lighten($green, 20%),$green);
+    padding: 20px;
+    h1{
+        font-family: $font-family-Title;
+        font-size: $font-size-big;
+        color: $pink;  
+    }//end h1
+}//end header

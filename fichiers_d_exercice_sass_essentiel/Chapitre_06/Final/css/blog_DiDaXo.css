@@ -1,0 +1,484 @@
+/*
+Palette de couleurs
+
+Bleu foncé      #262087     rgb(38, 32, 135)
+Bleu clair      #59bdff     rgb(89, 189, 255)
+Gris foncé      #333333     rgb(51, 51, 51)
+Gris clair      #ebe6e1     rgb(235, 230, 225)
+Blanc           #FFF        rgb(255, 255, 255)
+Vert            #20875a     rgb(32, 135, 90)
+Rouge           #ba196a     rgb(186, 25, 106)
+
+*/
+/*Importer les Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway');
+
+/*styles principaux*/
+body{
+    background-color: #ebe6e1;
+    font-family: Raleway, Verdana, sans-serif;
+    color: #333333;
+}
+.wrapper{
+    max-width: 768px;
+    margin: 0px auto;
+}
+img.responsive{
+    width: 100%;
+    height: auto;
+}
+
+/*boutons*/
+.button-group{
+    font-size: 0;
+}
+.button-group li{
+    display: inline-block;
+}
+.button-group li a{
+    border-radius: 0;
+}
+.button-group li:first-child a{
+    border-radius: 5px 0px 0px 5px;
+}
+.button-group li:last-child a{
+    border-radius: 0px 5px 5px 0px;
+}
+.button a{
+    background-color: #FFF;
+    text-align: center;
+    padding-top: 6px;
+    border: solid 2px #59bdff;
+    border-radius: 5px;
+    color: #333333;
+    font-size: 30pt;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.button a:hover{
+    background-color: #59bdff;
+}
+
+
+/*header*/
+#header{
+    background-color: #262087;
+    padding: 0px 20px;
+    height: 120px;
+    padding-top: 20px;
+}
+#header figure{  
+    width: 65.775%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#header figure img {
+    max-width: 48.148%;
+}
+#header figure figcaption{
+    color: #FFF;
+}
+#header ul{
+    width:31.55%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+
+/*Barre de navigation*/
+
+#mainNav{
+    background-color: #333333;
+    padding: 20px;
+}
+#mainNav p{
+    text-align: right;
+}
+#mainNav ul{
+    display: none;
+}
+#mainNav ul li{
+    margin: 20px;
+}
+#mainNav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Oxygen, Verdana, sans-serif;
+    font-size: 24pt;
+}
+#mainNav ul li a:hover{
+    color: #59bdff;
+    border-bottom: solid 5px #59bdff;
+}
+
+/*titre de la page*/
+
+#title{
+    background-color: #20875a;
+    padding: 0px 20px;
+}
+#title .wrapper{
+    position: relative;
+    top: 20px;
+}
+
+#title h1 {
+    padding: 10px;
+    color: #FFF;
+    font-family: Oxygen, Verdana, sans-serif;
+    font-size: 30pt;
+    background-color: #ba196a;
+    background-color: rgba(186, 25, 106, 0.80);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*Contenu principal*/
+#mainContent{
+    background-color: #ebe6e1;
+    padding: 0px 20px;
+}
+#mainContent .wrapper{
+    margin-top: 40px;
+}
+#mainContent article{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#mainContent article h2{
+	font-family: Oxygen, Verdana, sans-serif;
+	margin-bottom: 15px;
+	color: #20875A;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#mainContent article h3{
+	font-family: Oxygen, Verdana, sans-serif;
+	margin-bottom: 10px;
+	color: #ba196a;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#mainContent article p{
+	margin-bottom: 15px;
+	line-height: 1.1em;
+}
+#mainContent article .chapeau{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#mainContent article ul{
+	list-style-type: disc;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+#mainContent article ol{
+	list-style-type: decimal;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+#mainContent article a{
+	text-decoration: none;
+	color: #BA196A;
+	font-weight: bold;
+}
+#mainContent article a:hover{
+	text-decoration: underline;
+}
+#mainContent article strong{
+	font-weight: bold;
+}
+#mainContent article em{
+	font-style: italic;
+}
+#mainContent article img.alignLeft{
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+#mainContent article img.alignRight{
+    float: right;
+    margin: 0px 0px 10px 10px;
+}
+
+/*colonne de droite*/
+#mainContent aside section {
+    background-color: #FFF;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#mainContent aside section > h1 {
+    background-color: #59bdff;
+    padding: 15px;
+    font-family: Oxygen, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22pt;
+    color: #ba196a;
+    border-radius: 5px 5px 0px 0px;
+}
+/*Section À propos*/
+#mainContent aside #about p{
+	padding: 15px;
+	font-style: italic;
+}
+#mainContent aside  #about p strong{
+	font-weight: bold;
+	font-style: normal;
+}
+/*Section share*/
+#mainContent aside #share #a2a{
+	padding: 15px;
+}
+/*Section Catégories*/
+#mainContent aside #categories ul{
+	padding: 15px
+}
+#mainContent aside #categories ul li{
+	margin-bottom: 3px;
+}
+#mainContent aside #categories ul li a{
+	display: block;
+	text-decoration: none;
+	color: #A8A8A8;
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 364px;
+	position: relative;
+}
+#mainContent aside #categories ul li a span{
+	display: inline-block;
+	background-color: #A8A8A8;
+	color: #BA196A;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 2px;
+	font-weight: bold;
+	position: absolute;
+	right: 15px;
+	bottom: 4px;
+	vertical-align: middle;
+}
+#mainContent aside #categories ul li a:hover{
+	background-color: #EBE6E1;
+}
+#mainContent aside #categories ul li a:hover span{
+	background-color: #FFF;
+}
+/*footer*/
+#footer{
+    background-color: #333333;
+    padding: 20px;
+}
+#footer section{
+	display: inline-block;
+	vertical-align: top
+}
+#footer section>h1{
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+	width: 65%;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+#footer section ul{
+	margin-left: 20px
+}
+#footer section ul li{
+	margin-bottom: 10px
+}
+#footer section ul li a{
+	color: #A8A8A8;
+	text-decoration: none;
+	font-weight: bold;
+}
+#footer section ul li a:hover{
+	text-decoration: underline;
+}
+#footer section ul li a img{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+/*FooterAddress*/
+#footer #footerAddress {
+	width: 100%;
+	margin-bottom: 20px;
+	
+}
+#footer #footerAddress figure{
+	display: inline-block;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	border-bottom: solid 2px #BA196A;
+	width: 65.853%;
+}
+#footer #footerAddress figure img{
+	width : 35.185%;
+	display: inline-block;
+}
+#footer #footerAddress figure figcaption{
+	color: #59BDFF;
+	display: inline-block;
+	font-size: 11pt;
+}
+#footer #footerAddress address {
+	display: none;
+	color: #FFF;
+	font-size: 10pt;
+}
+#footer #footerAddress address p{
+	margin-bottom: 10px
+}
+/*Footer Legal*/
+#footer #footerLegal{
+	width: 48.78%;
+	padding-right:10px;
+	border-right: 2px solid #FFF;
+}
+/*footer languages*/
+#footer #footerLanguage{
+	width: 48.78%;
+	padding-left: 10px;
+}
+/*Footer copyright*/
+#footer #copyright{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+#footer #copyright a{
+	display: block;
+	width: 125px;
+	margin: 20px auto;
+	background-image: linear-gradient(#FFF, #EBE6E1);
+	border: 2px solid #A8A8A8;
+	border-radius: 5px;
+	color: #333;
+	text-decoration: none;
+	font-size: 12pt;
+	padding-top: 3px;
+	
+}
+#footer #copyright a span{
+	font-size: 24pt;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#footer #copyright a:hover{
+	background-image: linear-gradient(#EBE6E1, #FFF);
+}
+#footer #copyright p{
+	color: #FFF;
+	font-size: 10pt;
+}
+/*Media queries*/
+@media (max-width: 1023px){
+    #mainNav {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+    #title{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 1024px){
+    .wrapper{
+        max-width: 1024px;
+    }
+    #mainContent article{
+        width: 66%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+    }
+    #mainContent aside{
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /*Buttons*/
+	.button a{
+		height: 40px;
+		width: 40px;
+		font-size: 16pt;
+	}
+	/*header*/
+	#header{
+		height: 100px;
+	}
+	#header figure{
+		width: 82.926%;
+	}
+	#header figure img{
+		max-width: 28.313%; /*3 colonnes sur 10*/
+        margin-right: 10px;
+		vertical-align: middle;
+	}
+	#header figure figcaption {
+		display: inline-block;
+        vertical-align: middle;
+		font-size: 18pt;
+	}
+	#header ul{
+		width: 14.634%;
+	}
+	/*Nav*/
+	#mainNav p{
+		display: none;
+	}
+	#mainNav ul{
+		display:block!important;
+	}
+	#mainNav ul li{
+		display: inline-block
+	}
+	
+	/*Footer*/
+    #footer div.row{
+        display: flex;
+    }
+	#footer #footerAddress{
+		width: 31.707%;
+		border-right: 2px solid #FFF;
+		padding-right: 20px;
+        margin-bottom: 0px;
+	}
+	#footer #footerAddress figure{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#footer #footerAddress figure img{
+		width: 100%;
+		margin-bottom: 10px
+	}
+	#footer #footerAddress address {
+		display: block;
+	}
+	#footer #footerLegal{
+		width: 31.707%;
+		padding: 0px 10px;
+	}
+	#footer #footerLanguage{
+		width: 31.707%;
+	}
+}/*Fin de min-width: 1024px*/
+@media (min-width: 1480px){
+    .wrapper{
+        max-width: 1480px;
+    }
+    #header figure img{
+        width: 17.647%;
+    }
+    #mainContent article {
+        margin-right: 25px;
+    }
+
+}/*Fin de min-width: 1480px*/

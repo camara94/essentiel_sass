@@ -1,0 +1,16 @@
+footer{
+    padding: 20px;
+    background:linear-gradient($pink, darken($pink, 30%));
+    p{
+        color: $white;
+        font-size: $font-size-small;
+        font-style: italic;
+        a{
+            color: $light-grey;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }//end :hover
+        }//end a
+    }//end p
+}//end footer

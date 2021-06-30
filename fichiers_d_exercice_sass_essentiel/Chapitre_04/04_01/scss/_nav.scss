@@ -1,0 +1,29 @@
+nav{
+    background-color: $pink;
+    p{
+        text-align: right;
+        margin: 0;
+        padding: 20px;
+    }//end p
+    ul{
+        @extend %listReset;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a{
+                display: inline-block;
+                padding: 2px 20px;
+                text-decoration: none;
+                color: $white;
+                font: {
+                    size: $font-size-regular;
+                    family: $font-family-Title;
+                    weight: bold;
+                }//end font
+                &:hover{
+                    background-color: $dark-grey;
+                }//end :hover
+            }//end a
+        }//end li
+    }//end ul
+}//end nav

@@ -1,0 +1,45 @@
+#header{
+    background-color: $headerBkg;
+    height: 120px;
+    padding: $defaultSpace $defaultSpace 0 $defaultSpace;
+    
+    figure {
+        @include horizontal(middle);
+        @include cols(6);
+        img{
+            max-width: 50%;
+        }
+        figcaption{
+            color: $white;
+            font-size: 12pt;
+        }
+    }//end Figure
+    ul{
+        @include horizontal(middle);
+        @include cols(6);
+        text-align: right;
+    }
+    @media screen and (min-width: map_get($breakpoints, 'md')){
+        height: 100px;
+        figure{
+            @include cols(10);
+            img{
+                @include cols(3, 10);
+                margin-right: $smallSpace;
+                @include horizontal(middle);
+            }//end img
+            figcaption{
+                @include horizontal(middle);
+                font-size: 18pt;
+            }
+        }//end figure
+        ul{
+            @include cols(2);
+        }//end ul
+    }//end md media query
+    @media screen and (min-width: map_get($breakpoints, 'xl')){
+        figure img{
+            @include cols(2);
+        }
+    }//end xl media Query
+}//end #header

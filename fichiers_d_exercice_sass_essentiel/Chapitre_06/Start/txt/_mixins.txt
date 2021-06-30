@@ -1,0 +1,29 @@
+@mixin centerBlock(){
+    margin: 0 auto;
+}
+@mixin border-radius($corners: "all", $radius:$defaultRadius){
+        -webkit-border-radius: radiusValue($corners, $radius);
+        -moz-border-radius: radiusValue($corners, $radius);
+        -ms-border-radius: radiusValue($corners, $radius);
+        -o-border-radius: radiusValue($corners, $radius);
+        border-radius: radiusValue($corners, $radius);
+}
+@mixin horizontal($vAlign: top){
+    display: inline-block;
+    vertical-align: $vAlign;
+}
+@mixin cols($numCols, $totalCols:$colsInGrid, $gutter: 0){
+    @if $gutter == 0{
+        width: percentage($numCols / $totalCols);
+    } @else {
+        width: calc(#{percentage($numCols / $totalCols)} - #{$gutter});
+    }
+}
+@mixin gradient($from, $to){
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 ); /* IE6-9 */
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($from, $to); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($from, $to); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($from, $to); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($from, $to); /* Standard syntax */
+}

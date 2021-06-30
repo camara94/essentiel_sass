@@ -1,0 +1,157 @@
+#mainContent{
+    padding: 0 $defaultSpace;
+    .wrapper{
+        margin-top: $defaultSpace * 2;
+        article{
+            background-color: $mainBkg;
+            padding: $defaultSpace / 2;
+            @include border-radius();
+            margin-bottom: $defaultSpace;
+            clear: both;
+            @media screen and (min-width: map_get($breakpoints, 'md')){
+                @include cols(8, 12, $defaultSpace);
+                @include horizontal();
+                margin-right: $defaultSpace;
+            }//end md mediaQuery
+            h2{
+                font:{
+                    family: $titleFonts;
+                    weight: bold;
+                    size: $h2size;
+                }//end font
+                color: $h2color;
+                margin-bottom: $reducedSpace;
+            }//end h2
+            h3{
+                font:{
+                    family: $titleFonts;
+                    weight: bold;
+                    size: $h3size;
+                }//end font
+                color: $h3color;
+                margin-bottom: $smallSpace;
+            }//end h3
+            p{
+                font-size: $defaultFontSize;
+                margin-bottom: $reducedSpace;
+                line-height: 1.1em;
+            }//end p
+            .chapeau{
+                font-weight: bold;
+                line-height: 1.2em;
+            }//end .chapeau
+            ul{
+                @extend %list;
+                list-style: disc;
+            }//end ul
+            ol{
+                @extend %list;
+                list-style: decimal;
+            }//end ol
+            a{
+                text-decoration: none;
+                color: $linkColor;
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }//end a
+            strong{
+                font-weight: bold;
+            }//end strong
+            em{
+                font-style: italic;
+            }//end em
+            .alignLeft{
+                float: left;
+                margin: 0 $smallSpace $smallSpace 0;
+            }
+            .alignRight {
+                float: right;
+                margin: 0 0 $smallSpace $smallSpace;
+            }
+        }//end article
+        aside{
+            @media screen and (min-width: map_get($breakpoints, 'md')){
+                @include cols(4);
+                @include horizontal();
+            }//end md media query
+            section{
+                background-color: $mainBkg;
+                @include border-radius();
+                margin-bottom: $defaultSpace;
+                > h1{
+                    background-color: $rightTitleBkg;
+                    padding: 15px;
+                    font:{
+                        family: $titleFonts;
+                        weight: bold;
+                        size: $rightTitleSize;
+                    }//end font
+                    color: $rightTitleColor;
+                    @include border-radius(top);
+                }//end > h1
+            }//end  section
+            #about{
+                p{
+                    padding: $defaultFontSize;
+                    font: {
+                        style: italic;
+                        size: $defaultFontSize;
+                    }//end font
+                    strong{
+                        font:{
+                            weight: bold;
+                            style: normal;
+                        }
+                    }//end strong
+                }//end p
+            }//end #about
+            #share{
+                #a2a{
+                   padding: $defaultSpace; 
+                }//end a2a
+            }//end #share
+            #categories{
+                ul{
+                    padding: $defaultSpace;
+                    li{
+                        margin-bottom: 3px;
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            color: $categoriesColor;
+                            padding: 5px;
+                            @include border-radius();
+                            width: 100%;
+                            max-width: map_get($breakpoints, 'sm') / 2; 
+                            position: relative;
+                            font-size: $defaultFontSize;
+                            span{
+                                display: inline-block;
+                                background-color: $categoriesColor;
+                                color: $badgeColor;
+                                width: 20px;
+                                height: 20px;
+                                @include border-radius('all', 50%);
+                                text-align: center;
+                                padding-top: 2px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: 15px;
+                                bottom: 4px;
+                                vertical-align: middle;
+                            }//end span
+                            &:hover{
+                                background-color: $categoriesColorHover;
+                                span{
+                                    background-color: $white;
+                                }
+                            }//end :hover
+                        }//end a
+                    }//end li
+                }//end ul
+            }//end #categories
+        }//end aside
+    }//end .wrapper
+}//end #mainContent

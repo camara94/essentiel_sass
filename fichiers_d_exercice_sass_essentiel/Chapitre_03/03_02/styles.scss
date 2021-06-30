@@ -1,0 +1,41 @@
+//colors
+$pink: #C69;
+$light-grey: #DADBDF;
+$dark-grey: #6B717F;
+$white: #FFF;
+
+//font families
+$font-family-text: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-Title: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+
+$font-size-regular: 1rem;
+$font-size-small: 0.75rem;
+$font-size-big: 2rem;
+
+
+body{
+    background-color: $light-grey;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color: $white;
+}
+h1{
+    font-family: $font-family-Title;
+    font-size: $font-size-big;
+    color: $pink;
+    padding: 20px;
+}
+p{
+    color: $dark-grey;
+    font-size: $font-size-regular;
+    padding: 0 20px;
+}
+footer{
+    background-color: $pink;
+    color: $white;
+    padding: 20px;
+    font-size: $font-size-small;
+    font-style: italic;
+}

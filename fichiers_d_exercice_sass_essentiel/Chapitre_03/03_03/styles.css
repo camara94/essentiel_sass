@@ -1,0 +1,77 @@
+/* line 17, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+body {
+  background-color: #DADBDF; }
+
+/* line 20, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #FFF; }
+
+/* line 25, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+header {
+  background-color: #699;
+  padding: 20px; }
+  /* line 28, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+  header h1 {
+    font-family: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+    font-size: 2rem;
+    color: #C69; }
+
+/* line 34, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+nav {
+  background-color: #C69; }
+  /* line 36, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    /* line 43, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+    nav ul li a {
+      display: block;
+      padding: 2px 20px;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 1rem;
+      font-font-family: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+      font-weight: bold; }
+      /* line 53, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+      nav ul li a:hover {
+        background-color: #6B717F; }
+
+/* line 60, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+section {
+  margin: 20px 0;
+  padding: 0 20px; }
+  /* line 63, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+  section p {
+    color: #6B717F;
+    font-size: 1rem; }
+    /* line 66, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+    section p a {
+      color: #699;
+      text-decoration: none; }
+      /* line 69, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+      section p a:hover {
+        text-decoration: underline; }
+
+/* line 76, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+footer {
+  padding: 20px;
+  background-color: #C69; }
+  /* line 79, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+  footer p {
+    color: #FFF;
+    font-size: 0.75rem;
+    font-style: italic; }
+    /* line 83, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+    footer p a {
+      color: #DADBDF;
+      text-decoration: none; }
+      /* line 86, /Users/damienbkx/Creative Cloud Files/InProgress/V2B/FR_1465_EssentielSaas/currentExercise/styles.scss */
+      footer p a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */

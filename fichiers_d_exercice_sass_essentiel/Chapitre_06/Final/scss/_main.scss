@@ -1,0 +1,19 @@
+body{
+    background-color: $bodyBkg;
+    font-family: $bodyFonts;
+    color: $bodyText;
+    font-size: 0;
+}
+.wrapper{
+    width: 100%;
+    @include centerBlock();
+    @each $breakpoint in map-values($breakpoints) {
+        @media screen and (min-width: $breakpoint){
+            max-width: $breakpoint
+        }
+    }
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}

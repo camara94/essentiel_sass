@@ -1,0 +1,20 @@
+//colors
+$pink: #C69;
+$light-grey: #DADBDF;
+$dark-grey: #6B717F;
+$white: #FFF;
+$green: #699; 
+
+//font families
+$font-family-text: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-Title: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+
+$font-size-regular: 1rem;
+$font-size-small: $font-size-regular * 0.75;
+$font-size-big: $font-size-regular * 2;
+
+//layout defaults
+$defaultBorderRadius: 5px;
+
+//font-awesome custom
+$fa-font-path: "fonts" !default;

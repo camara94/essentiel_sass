@@ -1,0 +1,127 @@
+#footer{
+    background-color: $footerBkg;
+    padding: $defaultSpace;
+    section{
+        @include horizontal();
+        > h1{
+            color: $footerTitleColor;
+            border-bottom: solid 1px $footerTitleColor;
+            @include cols(9);
+            padding-bottom: 5px;
+            margin-bottom: $reducedSpace;
+            font-size: $defaultFontSize;
+        }//end > h1
+        ul{
+            margin-left: $defaultSpace;
+            font-size: $reducedFontSize;
+            li{
+                margin-bottom: $smallSpace;
+                a{
+                    color: $footerLinkColor;
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover{
+                        text-decoration: underline;
+                    }//end :hover
+                    img{
+                        margin-right: 5px;
+                        vertical-align: middle;
+                    }
+                }//end a
+            }//end li
+        }//end ul
+    }//end section
+    #footerAddress{
+        @include cols(12);
+        margin-bottom: $defaultSpace;
+        figure {
+            display: inline-block;
+            padding: {
+                bottom: $reducedSpace;
+                right: $reducedSpace;
+            }
+            border-bottom: solid 2px $highlight1;
+            @include cols(9);
+            img{
+                @include cols(3, 9);
+                display: inline-block;
+            }//end img
+            figCaption{
+                color: $highlight3;
+                display: inline-block;
+                font-size: $reducedFontSize;
+            }
+        }//end figure
+        address{
+            display: none;
+            color: $footerTitleColor;
+            font-size: $smallFontSize;
+            p{
+                margin-bottom: $smallSpace;
+            }//end p
+        }//end address
+    }//end #footerAddress
+    #footerLegal{
+        @include cols(6);
+        padding-left: $smallSpace;
+        border-right: 2px solid $footerTitleColor;
+    }//end #footerLegal
+    #footerLanguage{
+        @include cols(6);
+        padding-left: $smallSpace;
+    }//end FooterLanguages
+    #copyright{
+        @include cols(12);
+        text-align: center;
+        margin-top: $defaultSpace;
+        a{
+           display: block;
+            width: 125px;
+            margin: $defaultSpace auto;
+            border: 2px solid $highlight5;
+            @include border-radius();
+            color: $bodyText;
+            text-decoration: none;
+            font-size: $reducedFontSize;
+            padding: $smallSpace;
+            @include gradient($buttonBkg, $highlight6);
+            span{
+                @include horizontal(middle);
+                margin-right: $tinySpace;
+                font-size: $defaultFontSize;
+            }//end span
+            &:hover{
+                @include gradient($highlight6, $buttonBkg);
+            }
+        }//end a
+        p{
+            color: $footerTitleColor;
+            font-size: $reducedFontSize;
+        }
+    }//end #copyright
+    @media screen and (min-width: map_get($breakpoints, 'md')){
+        div.row{
+            display: flex;
+        }//end div.row
+        #footerAddress{
+            @include cols(4);
+            border-right: 2px solid $footerTitleColor;
+            padding-right: $defaultSpace;
+            margin-bottom: 0;
+            figure, figure img{
+                width: 100%;
+                margin-bottom: $smallSpace;
+            }//end figure, img
+            address{
+                display: block;
+            }//end address
+        }//end #footerAddress
+        #footerLegal{
+            @include cols(4);
+            padding: 0 $smallSpace;
+        }
+        #footerLanguage{
+           @include cols(4); 
+        }
+    }//end md media query
+}//end #footer

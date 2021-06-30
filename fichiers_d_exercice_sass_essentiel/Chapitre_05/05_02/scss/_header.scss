@@ -1,0 +1,18 @@
+header{
+    background:linear-gradient(lighten($green, 30%), $green);
+    padding: 20px;
+    display: flex;
+    h1{
+        font-family: $font-family-Title;
+        font-size: $font-size-big;
+        color: $pink;
+        flex: 10;
+    }//end h1
+    ul{
+        flex:2;
+        @extend %listReset;
+        li{
+            display: inline-block;
+        }
+    }//end ul
+}//end header

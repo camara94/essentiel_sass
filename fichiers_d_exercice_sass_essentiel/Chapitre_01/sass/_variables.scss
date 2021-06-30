@@ -1,0 +1,32 @@
+//sass colors
+$pink: #C69;
+$green: #699;
+$blue: #036;
+$white: #FFF;
+$black: #000;
+$light-grey: #DADBDF;
+$dark-grey: #6B717F;
+
+//font families
+$font-family-text: source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-Title: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+//sizes
+
+$font-size-regular: 1rem;
+$font-size-small: $font-size-regular * 0.75;
+$font-size-large: $font-size-small * 2;
+$font-size-x-large: $font-size-regular * 2;
+$font-size-xx-large: $font-size-large * 2;
+$font-size-xxx-large: $font-size-x-large * 2;
+$font-size-xxxx-large: $font-size-xx-large * 2;
+
+//sass breakpoints as defined on http://sass-lang.com/styleguide/layout
+
+$breakpoints: (
+    mobile-small: 240px,
+    mobile-large: 320px,
+    tablet-small: 480px,
+    tablet-large: 768px,
+    screen-small: 1024px,
+    screen-large: 1300px
+)

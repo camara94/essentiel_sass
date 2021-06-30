@@ -1,0 +1,21 @@
+//import external libraries
+@import "reset/reset";
+@import "font-awesome/font-awesome";
+
+//import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway');
+
+//import Variables, mixins, and functions
+@import "variables";
+@import "functions";
+@import "extend";
+@import "mixins";
+
+//import actual styles
+@import "main";
+@import "buttons";
+@import "header";
+@import "navigation";
+@import "title";
+@import "mainContent";
+@import "footer";

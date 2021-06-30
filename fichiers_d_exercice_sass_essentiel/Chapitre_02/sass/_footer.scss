@@ -1,0 +1,9 @@
+footer{
+    background-color: $color-background-footer;
+    color: $color-text-invert;
+    font: {
+        size: $font-size-small;
+        style: italic;
+    }
+    padding: 20px;
+}

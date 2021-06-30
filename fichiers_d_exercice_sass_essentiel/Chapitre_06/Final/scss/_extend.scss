@@ -1,0 +1,24 @@
+%button{
+    background-color: $buttonBkg;
+    text-align: center;
+    padding-top: 6px;
+    border: $buttonBorder;
+    color: $bodyText;
+    font-size: $buttonFontSize;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    &:hover{
+        background-color: $buttonBkgHover;
+    }
+    @media screen and (min-width: map_get($breakpoints, 'md')){
+            height: 40px;
+            width: 40px;
+            font-size: 16pt;
+    }//end md media query
+}
+%list {
+    margin-left: $extraSpace;
+    margin-bottom: $reducedSpace;
+    font-size: $defaultFontSize;
+}

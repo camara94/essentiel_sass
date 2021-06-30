@@ -1,0 +1,24 @@
+#title{
+    background-color: $titleBkg;
+    padding: 0 $defaultSpace;
+    .wrapper{
+        position: relative;
+        top: $defaultSpace;
+        h1{
+            padding: $defaultSpace / 2;
+            color: $white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font:{
+                family: $titleFonts;
+                size: $mainTitleSize;
+            }
+            background-color: $mainTitleBkg;
+            background-color: hexToRgba($mainTitleBkg, 0.8);
+        }
+    }//end .wrapper
+    @media screen and (max-width: (map_get($breakpoints, 'md') - 1)){
+        margin-top: 100px;
+    }//end md - 1 media query
+}//end #title

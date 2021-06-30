@@ -1,0 +1,24 @@
+#main{
+    margin: 20px 0;
+    padding: 0 20px;
+    font: {
+        family: $font-family-text;
+        size: $font-size-regular;
+    }//end font
+    color: $dark_grey;
+    h1{
+        font-size: $font-size-x-large;
+        color:$green;
+        margin-bottom: 20px;
+    }//end h1
+    p{
+        margin: 10px 0;
+    }//end p
+    a{
+        text-decoration: none;
+        color: $pink;
+        &:hover{
+            text-decoration: underline;
+        }//end :hover
+    }//end a
+}//end #main

@@ -1,0 +1,7 @@
+@function unitize($value){
+    @if type_of($value) == 'number' and unitless($value){
+        @return unquote($value + $defaultUnit);
+    }@else{
+        @return $value;
+    }
+}

@@ -1,0 +1,80 @@
+/* line 1, /Users/producer/Documents/Chapitre03/03_05/scss/_main.scss */
+body {
+  background-color: #DADBDF;
+  background-image: url("css-27192.svg");
+  background-attachment: fixed; }
+
+/* line 9, /Users/producer/Documents/Chapitre03/03_05/scss/_main.scss */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 3px #699; }
+
+/* line 1, /Users/producer/Documents/Chapitre03/03_05/scss/_header.scss */
+header {
+  background: linear-gradient(#a3c2c2, #699);
+  padding: 20px; }
+  /* line 4, /Users/producer/Documents/Chapitre03/03_05/scss/_header.scss */
+  header h1 {
+    font-family: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+    font-size: 2rem;
+    color: #C69; }
+
+/* line 1, /Users/producer/Documents/Chapitre03/03_05/scss/_nav.scss */
+nav {
+  background-color: #C69; }
+  /* line 3, /Users/producer/Documents/Chapitre03/03_05/scss/_nav.scss */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    /* line 10, /Users/producer/Documents/Chapitre03/03_05/scss/_nav.scss */
+    nav ul li a {
+      display: block;
+      padding: 2px 20px;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 1rem;
+      font-font-family: source-serif-pro, Georgia, "Times New Roman", Times, serif;
+      font-weight: bold; }
+      /* line 20, /Users/producer/Documents/Chapitre03/03_05/scss/_nav.scss */
+      nav ul li a:hover {
+        background-color: #6B717F; }
+
+/* line 1, /Users/producer/Documents/Chapitre03/03_05/scss/_mainContent.scss */
+section {
+  margin: 20px 0;
+  padding: 0 20px; }
+  /* line 4, /Users/producer/Documents/Chapitre03/03_05/scss/_mainContent.scss */
+  section p {
+    color: #6B717F;
+    font-size: 1rem; }
+    /* line 7, /Users/producer/Documents/Chapitre03/03_05/scss/_mainContent.scss */
+    section p a {
+      color: #699;
+      text-decoration: none; }
+      /* line 10, /Users/producer/Documents/Chapitre03/03_05/scss/_mainContent.scss */
+      section p a:hover {
+        text-decoration: underline; }
+
+/* line 1, /Users/producer/Documents/Chapitre03/03_05/scss/_footer.scss */
+footer {
+  padding: 20px;
+  background: linear-gradient(#C69, #73264d); }
+  /* line 4, /Users/producer/Documents/Chapitre03/03_05/scss/_footer.scss */
+  footer p {
+    color: #FFF;
+    font-size: 0.75rem;
+    font-style: italic; }
+    /* line 8, /Users/producer/Documents/Chapitre03/03_05/scss/_footer.scss */
+    footer p a {
+      color: #DADBDF;
+      text-decoration: none; }
+      /* line 11, /Users/producer/Documents/Chapitre03/03_05/scss/_footer.scss */
+      footer p a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */
